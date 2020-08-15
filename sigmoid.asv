@@ -1,0 +1,14 @@
+function sigmoid(x)
+    y = 1/(1+exp(-x));
+    disp(y)
+end
+
+function softmax(x)
+    y = exp(x)/sum(exp(x));
+    disp(y)
+end
+
+function sigmoidDeriv(x)
+    y = sigmoid(x) * (1-sigmoid(x));
+    disp(y)
+end
